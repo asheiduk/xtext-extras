@@ -4,7 +4,7 @@ ext.title = 'Xbase Runtime Library'
 description = 'Reusable expression language that interoperates with Java.'
 
 dependencies {
-	compile project(':org.eclipse.xtext.common.types')
+	api project(':org.eclipse.xtext.common.types')
 }
 
 // Include the xtext files from the main source set when executing the workflow

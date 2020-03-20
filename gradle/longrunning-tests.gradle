@@ -22,10 +22,10 @@ sourceSets {
 }
 
 configurations {
-	longrunningCompile.extendsFrom testCompile
-	longrunningRuntime.extendsFrom testRuntime
-	suitesCompile.extendsFrom testCompile
-	suitesRuntime.extendsFrom testRuntime
+	longrunningCompile.extendsFrom testImplementation
+	longrunningRuntime.extendsFrom testRuntimeOnly
+	suitesCompile.extendsFrom testImplementation
+	suitesRuntime.extendsFrom testRuntimeOnly
 }
 
 if (findProperty('compileXtend') == 'true') {
